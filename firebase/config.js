@@ -1,11 +1,11 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDQp4QQm3J15Dt7Ndz4YvPYUPUdjH2wbKI",
-  authDomain: "product-hunt-38625.firebaseapp.com",
-  projectId: "product-hunt-38625",
-  storageBucket: "product-hunt-38625.appspot.com",
-  messagingSenderId: "369334850933",
-  appId: "1:369334850933:web:d46de24a20e7c6ee246f3c"
+  apiKey: process.env.NEXT_PUBLIC_APIKEY,
+  authDomain:  process.env.NEXT_PUBLIC_AUTHDOMAIN,
+  projectId:  process.env.NEXT_PUBLIC_PROJECTID,
+  storageBucket:  process.env.NEXT_PUBLIC_STORAGEBUCKET,
+  messagingSenderId:  process.env.NEXT_PUBLIC_MESSAGINGSENDERID,
+  appId:  process.env.NEXT_PUBLIC_APPID
 };
 
 export default firebaseConfig

@@ -18,7 +18,6 @@ const useProductos = orden => {
         }
         });
         setProductos(productos)
-        console.log(productos)
         
     }
     getProductos()
