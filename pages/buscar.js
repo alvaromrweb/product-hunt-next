@@ -7,7 +7,7 @@ import useProductos from "../hooks/useProductos"
 export default function Buscar() {
 
   const router = useRouter()
-  const busqueda = router.query.q
+  let busqueda = router.query.q
 
   const { productos } = useProductos('creado')
 
