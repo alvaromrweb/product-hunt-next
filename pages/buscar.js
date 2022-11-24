@@ -7,7 +7,7 @@ import useProductos from "../hooks/useProductos"
 export default function Buscar() {
 
   const router = useRouter()
-  const busqueda = router.query.q.toLowerCase()
+  const busqueda = router.query.q
 
   const { productos } = useProductos('creado')
 
@@ -15,6 +15,7 @@ export default function Buscar() {
 
   useEffect(() => {
     const productosFiltrados = productos.filter(producto => {
+      busqueda = busqueda.toLowerCase()
       return (
         producto.nombre.toLowerCase().includes(busqueda) ||
         producto.descripcion.toLowerCase().includes(busqueda)
